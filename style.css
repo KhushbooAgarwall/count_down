@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 2% 6%;
+    position: relative;
+}
+.logo{
+    width: 8vw;
+    padding: 1.3vw 0;
+    cursor: pointer;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1{
+    font-size: 4.2vw;
+    font-weight: 600;
+}
+.content h1 span{
+    color: #ff3753;
+}
+.content button{
+    background: transparent;
+    border: .2vw solid #fff;
+    outline: none;
+    padding: .8vw 1.6vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 2vw;
+    cursor: pointer;
+    font-size: .9vw;
+}
+.content button img{
+    width: .9vw;
+    margin-left: .9vw;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 30vw;
+}
+.launch-time div p{
+    font-size: 4vw;
+    margin-bottom: -.7vw;
+}
+.rocket{
+    width: 16.5vw;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+/* Responsive Design */
+@media (max-width: 991.98px) { 
+    .main{
+        padding: 5% 7%;
+    }
+    .logo{
+        width: 15vw;
+    }
+    .content p{
+        font-size: 2.1vw;
+    }
+    .content h1{
+        font-size: 7.5vw;
+    }
+    .launch-time{
+        margin: 5vw 0 9vw 0;
+    }
+    .launch-time div p{
+        font-size: 7.5vw;
+    }
+    .launch-time div span{
+        font-size: 2.5vw;
+    }
+    .content button{
+        border: .3vw solid #fff;
+        padding: 1vw 2vw;
+        margin-top: 4vw;
+        font-size: 2.2vw;
+    }
+    .content button img{
+        width: 1.3vw;
+        margin-left: 1.8vw;
+    }
+    .rocket{
+        width: 45vw;
+        right: -3%;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .logo{
+        width: 18vw;
+    }
+    .content p{
+        font-size: 3vw;
+    }
+    .content h1{
+        width: 80%;
+        font-size: 9.5vw;
+    }
+    .launch-time div p{
+        font-size: 8vw;
+    }
+    .launch-time div span{
+        font-size: 3vw;
+    }
+    .content button{
+        border: .4vw solid #fff;
+        padding: 1.3vw 2.5vw;
+        font-size: 3vw;
+    }
+    .content button img{
+        width: 1.8vw;
+        margin-left: 2vw;
+    }
+    .rocket{
+        width: 40vw;
+        right: -2%;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .main{
+        padding: 7% 9%;
+    }
+    .logo{
+        width: 22vw;
+    }
+    .content p{
+        font-size: 3.8vw;
+        margin-bottom: 10vw;
+    }
+    .content h1{
+        width: 100%;
+        font-size: 12vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+    .launch-time{
+        margin: 5vw 0 14vw 0;
+    }
+    .launch-time div p{
+        font-size: 9vw;
+    }
+    .launch-time div span{
+        font-size: 4vw;
+    }
+    .content button{
+        border: .5vw solid #fff;
+        padding: 1.5vw 3vw;
+        font-size: 4.5vw;
+        justify-self: center;
+        margin-right: 10vw;
+    }
+    .content button img{
+        width: 2.2vw;
+        margin-left: 2.5vw;
+    }
+    .rocket{
+        width: 38vw;
+        right: -1%;
+    }
+}
+
+@media (max-width: 480.98px) { 
+    .main{
+        padding: 9% 9%;
+    }
+    .logo{
+        width: 26vw;
+    }
+    .content p{
+        font-size: 4vw;
+        margin-bottom: -5vw;
+    }
+    .content h1{
+        width: 100%;
+        font-size: 16vw;
+        margin-top: 10vw;
+        margin-bottom: 15vw;
+    }
+    .launch-time{
+        margin: 5vw 0 17vw 0;
+    }
+    .launch-time div p{
+        font-size: 11vw;
+    }
+    .launch-time div span{
+        font-size: 4.5vw;
+    }
+    .content button{
+        border: .6vw solid #fff;
+        padding: 2vw 4vw;
+        font-size: 5.5vw;
+        justify-self: center;
+        /* margin-right: 10vw; */
+    }
+    .content button img{
+        width: 2.8vw;
+        margin-left: 3vw;
+    }
+    .rocket{
+        width: 39vw;
+        right: -5%;
+    }
+}
